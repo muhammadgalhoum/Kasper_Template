@@ -142,7 +142,6 @@ header nav ul {
 	display: flex;
 }
 @media (max-width: 767px) {
-	
 	header nav ul {
 		display: none;
 	}
@@ -199,7 +198,7 @@ header nav .form i {
 .landing {
 	min-height: 100vh;
 	background-color: #1f2021;
-	background-image: url(../images/landing.jpg);
+	background-image: url(../images/landing.webp);
 	background-size: cover;
 	position: relative;
 }
@@ -232,6 +231,11 @@ header nav .form i {
 	}
 	.landing .text .content {
 		max-width: 100%;
+	}
+}
+@media (min-width: 767px){
+	.landing .text .content {
+		margin-left: 25px;
 	}
 }
 .landing .text .content h2 {
@@ -327,7 +331,7 @@ header nav .form i {
 	padding-bottom: var(--section-padding, 100px);
 	height: 600px;
 	position: relative;
-	background-image: url(../images/design-features.jpg);
+	background-image: url(../images/design-features.webp);
 	background-size: cover;
 	display: flex;
 	align-items: center;
@@ -551,7 +555,7 @@ header nav .form i {
 	padding-top: var(--section-padding, 100px);
 	padding-bottom: var(--section-padding, 100px);
 	text-align: center;
-	background-image: url(../images/stats.png);
+	background-image: url(../images/stats.webp);
 	background-size: cover;
 	position: relative;
 }
@@ -750,7 +754,7 @@ header nav .form i {
 	padding-bottom: var(--section-padding, 100px);
 	text-align: center;
 	color: white;
-	background-image: url(../images/quote.jpg);
+	background-image: url(../images/quote.webp);
 	background-size: cover;
 	position: relative;
 }
@@ -881,7 +885,7 @@ header nav .form i {
 .subscribe {
 	padding-top: var(--section-padding, 100px);
 	padding-bottom: var(--section-padding, 100px);
-	background-image: url(../images/subscribe.jpg);
+	background-image: url(../images/subscribe.webp);
 	background-size: cover;
 	color: white;
 	position: relative;
@@ -1035,7 +1039,7 @@ header nav .form i {
 footer {
 	padding-top: 80px;
 	padding-bottom: 25px;
-	background-image: url(../images/subscribe.jpg);
+	background-image: url(../images/subscribe.webp);
 	background-size: cover;
 	color: white;
 	text-align: center;
