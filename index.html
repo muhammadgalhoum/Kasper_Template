@@ -1,43 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Ksaper Template">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
-    <meta name="author" content="Galhoum">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kasper | Template Two</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Ksaper Template" />
+    <meta name="keywords" content="Ksaper Template using HTML, CSS, JavaScript" />
+    <meta name="author" content="Galhoum" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kasper Template</title>
     <!-- Render All Elements Normally -->
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.css" />
     <!-- Font Awesome Library -->
-    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/all.min.css" />
     <!-- Main Template CSS File -->
-    <link rel="stylesheet" href="css/kasper.css">
+    <link rel="stylesheet" href="css/kasper.css" />
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"/>
+    <script src="main.js" defer></script>
   </head>
   <body>
+    <div class="searchContainer">
+      <i class="fa-solid fa-xmark" onclick="closeSearch()"></i>
+      <input type="search" name="search" id="search" placeholder="Start typing...">
+    </div>
+    <img src="imgs/up.webp" alt="scroll-to-top" class="up">
     <!-- Start Header -->
     <header>
       <div class="container">
         <a href="index.html" class="logo">
-          <img src="images/logo.webp" alt="Logo">
+          <img src="imgs/logo.webp" alt="Logo" />
         </a>
         <nav>
           <i class="fas fa-bars toggle-menu"></i>
-          <ul>
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Contact</a></li>
+          <ul class="dropdown">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
           <div class="form">
-            <i class="fas fa-search"></i>
+            <i class="searchIcon fas fa-search"></i>
           </div>
         </nav>
       </div>
@@ -49,28 +55,23 @@
       <div class="text">
         <div class="content">
           <h2>
-            Hello World!<br/>
+            Hello World!<br />
             We Are Kasper We Make Art.
           </h2>
           <p>
-            Curabitur arcu erat, accumsan id imperdiet et, porttitor
-            at sem. Mauris blandit aliquet elit, eget tincidunt nibh 
-            pulvinar a. Curabitur aliquet quam. Accumsan id imperdiet et,
-            porttitor at sem. Mauris blandit aliquet elit, eget tincidunt
+            Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+            Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+            Curabitur aliquet quam. Accumsan id imperdiet et, porttitor at sem.
+            Mauris blandit aliquet elit, eget tincidunt
           </p>
         </div>
       </div>
-      <i class="fas fa-angle-left change-background fa-2x"></i>
-      <i class="fas fa-angle-right change-background fa-2x"></i>
-      <ul class="bullets">
-        <li></li>
-        <li class="active"></li>
-        <li></li>
-      </ul>
+      <i id="leftAngle" class="fas fa-angle-left change-background fa-2x"></i>
+      <i id="rightAngle" class="fas fa-angle-right change-background fa-2x"></i>
     </div>
     <!-- End Landing -->
     <!-- Start Services -->
-    <section class="services">
+    <section id="services" class="services">
       <div class="container">
         <div class="main-heading">
           <h2>Services</h2>
@@ -85,8 +86,9 @@
             <div class="text">
               <h3>Vorem amet intuitive</h3>
               <p>
-              Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
-              Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam.
+                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                Curabitur aliquet quam.
               </p>
             </div>
           </div>
@@ -96,7 +98,8 @@
               <h3>Vorem amet intuitive</h3>
               <p>
                 Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
-                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam.
+                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                Curabitur aliquet quam.
               </p>
             </div>
           </div>
@@ -106,7 +109,8 @@
               <h3>Vorem amet intuitive</h3>
               <p>
                 Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
-                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam.
+                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                Curabitur aliquet quam.
               </p>
             </div>
           </div>
@@ -116,7 +120,8 @@
               <h3>Vorem amet intuitive</h3>
               <p>
                 Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
-                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam.
+                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                Curabitur aliquet quam.
               </p>
             </div>
           </div>
@@ -125,23 +130,23 @@
     </section>
     <!-- End Services -->
     <!-- Start Design -->
-      <section class="design">
-        <div class="image">
-          <img src="images/mobile.webp" alt="Mobile">
-        </div>
-        <div class="text">
-          <h2>Our Design Comes With...</h2>
-          <ul>
-            <li>Responsive Design</li>
-            <li>Modern And Clean Design</li>
-            <li>Clean Code</li>
-            <li>Browser Friendly</li>
-          </ul>
-        </div>
-      </section>
+    <section class="design">
+      <div class="image">
+        <img src="imgs/mobile.webp" alt="Mobile" />
+      </div>
+      <div class="text">
+        <h2>Our Design Comes With...</h2>
+        <ul>
+          <li>Responsive Design</li>
+          <li>Modern And Clean Design</li>
+          <li>Clean Code</li>
+          <li>Browser Friendly</li>
+        </ul>
+      </div>
+    </section>
     <!-- End Design -->
     <!-- Start Portfolio -->
-    <section class="portfolio">
+    <section id="portfolio" class="portfolio">
       <div class="container">
         <div class="main-heading">
           <h2>Portfolio</h2>
@@ -151,65 +156,65 @@
           </p>
         </div>
         <ul class="shuffle">
-          <li class="active">All</li>
-          <li>App</li>
-          <li>Photography</li>
-          <li>Web</li>
-          <li>Print</li>
+          <li class="active" data-cat=".box">All</li>
+          <li data-cat=".app">App</li>
+          <li data-cat=".photography">Photography</li>
+          <li data-cat=".web">Web</li>
+          <li data-cat=".print">Print</li>
         </ul>
       </div>
       <div class="imgs-container">
-        <div class="box">
-          <img src="images/shuffle-01.webp" alt="Image1">
+        <div class="box app">
+          <img src="imgs/shuffle-01.webp" alt="Image1" />
           <div class="caption">
             <h4>Awesome Image</h4>
             <p>Photography</p>
           </div>
         </div>
-        <div class="box">
-          <img src="images/shuffle-02.webp" alt="Image2">
+        <div class="box web">
+          <img src="imgs/shuffle-02.webp" alt="Image2" />
           <div class="caption">
             <h4>Awesome Image</h4>
             <p>Photography</p>
           </div>
         </div>
-        <div class="box">
-          <img src="images/shuffle-03.webp" alt="Image3">
+        <div class="box app">
+          <img src="imgs/shuffle-03.webp" alt="Image3" />
           <div class="caption">
             <h4>Awesome Image</h4>
             <p>Photography</p>
           </div>
         </div>
-        <div class="box">
-          <img src="images/shuffle-04.webp" alt="Image4">
+        <div class="box photography">
+          <img src="imgs/shuffle-04.webp" alt="Image4" />
           <div class="caption">
             <h4>Awesome Image</h4>
             <p>Photography</p>
           </div>
         </div>
-        <div class="box">
-          <img src="images/shuffle-05.webp" alt="Image5">
+        <div class="box web">
+          <img src="imgs/shuffle-05.webp" alt="Image5" />
           <div class="caption">
             <h4>Awesome Image</h4>
             <p>Photography</p>
           </div>
         </div>
-        <div class="box">
-          <img src="images/shuffle-06.webp" alt="Image6">
+        <div class="box photography">
+          <img src="imgs/shuffle-06.webp" alt="Image6" />
           <div class="caption">
             <h4>Awesome Image</h4>
             <p>Photography</p>
           </div>
         </div>
-        <div class="box">
-          <img src="images/shuffle-07.webp" alt="Image7">
+        <div class="box print">
+          <img src="imgs/shuffle-07.webp" alt="Image7" />
           <div class="caption">
             <h4>Awesome Image</h4>
             <p>Photography</p>
           </div>
         </div>
-        <div class="box">
-          <img src="images/shuffle-08.webp" alt="Image8">
+        <div class="box print">
+          <img src="imgs/shuffle-08.webp" alt="Image8" />
           <div class="caption">
             <h4>Awesome Image</h4>
             <p>Photography</p>
@@ -222,7 +227,7 @@
     <!-- Start Video -->
     <section class="video">
       <video autoplay muted loop>
-        <source src="images/awesome-video.mp4" type="video/mp4">
+        <source src="imgs/awesome-video.mp4" type="video/mp4" />
         Your browser doesn't allow this video type
       </video>
       <div class="text">
@@ -233,7 +238,7 @@
     </section>
     <!-- End Video -->
     <!-- Start About -->
-    <section class="about">
+    <section id="about" class="about">
       <div class="container">
         <div class="main-heading">
           <h2>About US</h2>
@@ -242,7 +247,7 @@
             Mauris blandit aliquet elit, eget tincidunt.
           </p>
         </div>
-        <img src="images/about.webp" alt="about">
+        <img src="imgs/about.webp" alt="about" />
       </div>
     </section>
     <!-- End About -->
@@ -251,22 +256,22 @@
       <div class="container">
         <div class="box">
           <i class="fas fa-mug-hot"></i>
-          <div class="number">1,236</div>
+          <div class="number" data-num="120"></div>
           <p>Coffee Drinks</p>
         </div>
         <div class="box">
           <i class="far fa-folder"></i>
-          <div class="number">256</div>
-          <p>Cpmpleted Projects</p>
+          <div class="number" data-num="140"></div>
+          <p>Completed Projects</p>
         </div>
         <div class="box">
           <i class="far fa-envelope"></i>
-          <div class="number">1,743</div>
+          <div class="number" data-num="110"></div>
           <p>Mail Sent</p>
         </div>
         <div class="box">
           <i class="fas fa-trophy"></i>
-          <div class="number">17</div>
+          <div class="number" data-num="100"></div>
           <p>Awards Received</p>
         </div>
       </div>
@@ -282,7 +287,7 @@
             Mauris blandit aliquet elit, eget tincidunt.
           </p>
           <div class="content">
-            <img src="images/skills-01.webp" alt="firstOpinion">
+            <img src="imgs/skills-01.webp" alt="firstOpinion" />
             <div class="text">
               Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
               Mauris blandit aliquet elit, eget tincidunt.
@@ -290,7 +295,7 @@
             </div>
           </div>
           <div class="content">
-            <img src="images/skills-02.webp" alt="SecondOpinion">
+            <img src="imgs/skills-02.webp" alt="SecondOpinion" />
             <div class="text">
               Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
               Mauris blandit aliquet elit, eget tincidunt.
@@ -312,26 +317,26 @@
           <div class="prog-holder">
             <h4>Adobe</h4>
             <div class="prog">
-              <span style="width: 90%" data-progress="90%"></span>
-            </div> 
+              <span style="width: 0" data-progress="90%"></span>
+            </div>
           </div>
           <div class="prog-holder">
             <h4>HTML &amp; CSS</h4>
             <div class="prog">
-              <span style="width: 85%" data-progress="85%"></span>
-            </div> 
+              <span style="width: 0" data-progress="85%"></span>
+            </div>
           </div>
           <div class="prog-holder">
             <h4>JavaScript</h4>
             <div class="prog">
-              <span style="width: 80%" data-progress="80%"></span>
-            </div> 
+              <span style="width: 0" data-progress="80%"></span>
+            </div>
           </div>
           <div class="prog-holder">
             <h4>Python</h4>
             <div class="prog">
-              <span style="width: 90%" data-progress="90%"></span>
-            </div> 
+              <span style="width: 0" data-progress="90%"></span>
+            </div>
           </div>
         </div>
       </div>
@@ -340,16 +345,19 @@
     <!-- Start Quote -->
     <section class="quote">
       <div class="container">
-        <q>accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</q>
+        <q
+          >accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet
+          elit, eget tincidunt.</q
+        >
         <span>John Doe</span>
       </div>
     </section>
     <!-- End Quote -->
     <!-- Start Pricing -->
-    <section class="pricing">
+    <section id="pricing" class="pricing">
       <div class="container">
         <div class="main-heading">
-          <h2>Pricing </h2>
+          <h2>Pricing</h2>
           <p>
             Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
             Mauris blandit aliquet elit, eget tincidunt.
@@ -427,8 +435,8 @@
       <div class="container">
         <form action="" method="">
           <i class="far fa-envelope fa-lg"></i>
-          <input type="email" name="mail" placeholder="Your Mail" required>
-          <input type="submit" value="Subscribe">
+          <input type="email" name="mail" placeholder="Your Mail" required />
+          <input type="submit" value="Subscribe" />
         </form>
         <p>
           Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
@@ -438,10 +446,10 @@
     </section>
     <!-- End Subscribe -->
     <!-- Start Contact -->
-    <section class="contact">
+    <section id="contact" class="contact">
       <div class="container">
         <div class="main-heading">
-          <h2>Contact US </h2>
+          <h2>Contact US</h2>
           <p>
             Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
             Mauris blandit aliquet elit, eget tincidunt.
@@ -449,10 +457,27 @@
         </div>
         <div class="content">
           <form action="" method="">
-            <input class="main-input" type="text" name="name" placeholder="Your Name" required>
-            <input class="main-input" type="email" name="mail" placeholder="Your Mail" required>
-            <textarea class="main-input" name="message" placeholder="Your Message" required></textarea>
-            <input type="submit" value="Send Message">
+            <input
+              class="main-input"
+              type="text"
+              name="name"
+              placeholder="Your Name"
+              required
+            />
+            <input
+              class="main-input"
+              type="email"
+              name="mail"
+              placeholder="Your Mail"
+              required
+            />
+            <textarea
+              class="main-input"
+              name="message"
+              placeholder="Your Message"
+              required
+            ></textarea>
+            <input type="submit" value="Send Message" />
           </form>
           <div class="info">
             <div class="div-phone">
@@ -462,7 +487,12 @@
             </div>
             <div>
               <h4>Where We Are</h4>
-              <address>Awesome Address 17<br> New York, NYC<br> 123-4567-890<br> USA</address>
+              <address>
+                Awesome Address 17<br />
+                New York, NYC<br />
+                123-4567-890<br />
+                USA
+              </address>
             </div>
           </div>
         </div>
@@ -472,17 +502,25 @@
     <!-- Start Footer -->
     <footer>
       <div class="container">
-        <img src="images/logo.webp" alt="Logo">
+        <img src="imgs/logo.webp" alt="Logo" />
         <p>We Are Social</p>
         <div class="social-icons">
-          <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-          <a href="https://www.google.com" target="_blank"><i class="fa-brands fa-google-plus-g"></i></a> 
-          <a href="https://dribbble.com/" target="_blank"><i class="fa-brands fa-dribbble"></i></a>
+          <a href="https://www.facebook.com" target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://www.twitter.com" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://www.google.com" target="_blank"
+            ><i class="fa-brands fa-google-plus-g"></i
+          ></a>
+          <a href="https://dribbble.com/" target="_blank"
+            ><i class="fa-brands fa-dribbble"></i
+          ></a>
         </div>
-        <p class="copyright">&copy; 2022
-          <a href="https://www.graphberry.com/item/kasper-one-page-psd-template" target="_blank">Kasper</a>
-          All Right Reserved
+        <p class="copyright">
+          Made With <i class="fa-solid fa-heart"></i> By Galhoum &copy;
+          <script>document.write(new Date().getFullYear());</script>
         </p>
       </div>
     </footer>
