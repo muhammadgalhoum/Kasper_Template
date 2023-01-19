@@ -1,2 +1,2 @@
-# TemplateTwo
-Landing Page using HTML &amp; CSS
+# Kasper Template
+Kasper Template using HTML, CSS, and JavaScript
