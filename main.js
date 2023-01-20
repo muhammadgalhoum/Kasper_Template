@@ -92,7 +92,7 @@ lis.forEach((li) => {
 });
 
 // Image Slider
-let imgsList = ["../imgs/landing-1.webp", "../imgs/landing-2.webp", "../imgs/landing-3.webp"];
+let imgsList = ["imgs/landing-1.webp", "imgs/landing-2.webp", "imgs/landing-3.webp"];
 let currentBgImageIndex = 0;
 
 let rightAngle = document.getElementById("rightAngle");
